@@ -1,0 +1,363 @@
+:root {
+  --white: #ffffff;
+  --black: #000;
+  --btn: #f7f7f7;
+  --v0: #cceae8;
+  --v1: #dca8bd;
+  --v2: #c368b2;
+  --v3: #915370;
+  --logo: #b74e8d;
+  --sm:14px;
+  --md:18px;
+  --lg:40px;
+}
+
+body{
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* font-family: 'Quicksand', sans-serif; */
+.card-container {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);/* llena automaticamente la pantalla con los items que quepan, con tamano de 250px */
+  gap: 26px;
+  place-content: center; /* Centra todas las cart al centro de la pantalla */
+  
+}
+
+.produt-card{
+  width: 250px;
+}
+
+.produt-card img{
+  width: 250px;
+  height: 250px;
+  border-radius: 15px;
+  object-fit: cover; /* Tamano tal cual de la imagen, independiente del width t height que ponemos; */
+}
+
+.product-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.product-info figure{
+  margin: 0;
+}
+
+.product-info figure i{
+  font-size: 30px;
+}
+
+.product-info div p:nth-child(1){
+  /* primer parrafo que este dentro de DIV, dentro de product-info, tendra las clases que se asginaran */
+  font-weight: bold;
+  font-size:  var(--md);
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.product-info div p:nth-child(2){
+  /* Segundo parrafo que este dentro de DIV, dentro de product-info, tendra las clases que se asginaran */
+  font-size:  var(--sm);
+  margin-top: 20px;
+  margin-bottom: 0;
+  color: var(--v3);
+
+}
+
+@media(max-width: 640px){
+  .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 150px);/* llena automaticamente la pantalla con los items que quepan, con tamano de 250px */
+      gap: 26px;
+  }
+
+  .produt-card{
+      width: 150px;
+  }
+  
+  .produt-card img{
+      width: 150px;
+      height: 150px;
+      border-radius: 15px;
+      object-fit: cover; /* Tamano tal cual de la imagen, independiente del width t height que ponemos; */
+  }
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000;
+  --btn: #9d9d9d;
+  --v0: #eaccdf;
+  --v1: #dca8cb;
+  --v2: #c3689f;
+  --v3: #a44d91;
+  --logo: #b74ea0;
+  --sm:14px;
+  --md:18px;
+  --lg:40px;
+}
+
+body{
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.menu{
+  display: none;
+}
+
+.logo{
+  width: 180px;
+  height: 80px;
+  align-items: center;
+}
+
+.navbar-left ul, .navbar-right ul{
+  list-style: none;
+  padding: 25;
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  height: 500px;
+  width: 300px;
+  
+ 
+}
+
+nav{
+  display: flex;
+  padding: 20px 24px;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+}
+
+.navbar-left{
+  display: flex;
+}
+
+.navbar-left ul{
+  margin-left: 12px;
+}
+
+.navbar-left ul li a, .navbar-right ul li a{
+  text-decoration: none;
+  color: var(--btn);
+  
+  padding: 8px;
+  border-radius: 8px;
+  
+  padding-top: 25px;
+  font-size: 25px;
+}
+ 
+
+
+.navbar-left ul li a:hover, .navbar-right ul li a:hover{
+  border: 1px solid var(--logo);
+  color: var(--logo);
+}
+
+.cart{
+  font-size: 25px;
+}
+
+.menu{
+  display: none;
+}
+
+.main-container{
+  margin-top: 15px;
+}
+
+/* Estilos generales */
+body {
+font-family: 'Quicksand', sans-serif;
+margin: 0;
+padding: 0;
+}
+
+
+
+
+
+
+
+.close {
+color: #917a53;
+cursor: pointer;
+font-size: 18px;
+}
+
+
+
+
+.filter-container {
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+}
+
+label {
+font-size: 18px;
+color: #4EB79E;
+margin-right: 10px;
+}
+
+select {
+padding: 10px;
+border: 2px solid #68c3b7;
+border-radius: 5px;
+background-color: #f7f7f7;
+color: hsl(181, 27%, 45%);
+font-size: 16px;
+transition: border-color 0.3s, background-color 0.3s;
+}
+
+select:focus {
+outline: none;
+border-color: #4EB79E;
+background-color: #cceae8;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+from {
+  opacity: 0;
+}
+to {
+  opacity: 1;
+}
+}
+
+.animated {
+animation-duration: 1s;
+animation-fill-mode: both;
+}
+
+.fadeIn {
+animation-name: fadeIn;
+}
+
+
+
+@media(max-width: 640px){
+  .menu{
+      display: block;
+  }
+
+  .navbar-left ul{
+      display: none;
+  }
+
+  .navbar-email{
+      display: none;
+  }
+}
+
+.menu{
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+/*.product-img {
+  max-width: 60%;
+  height: auto;
+}*/
+
+
+.cart:hover {
+  color: #4EB79E;
+}
+
+#img{
+width: 650px;
+height: 540px;
+}
+#img1{
+width: 680px;
+height: 580px;
+
+}
+
+/* min*/
+
+.col-6{
+
+
+border-width: 50%;
+display: flex;
+justify-content: right;
+
+}
+
+.row{
+padding-left: 80px;
+padding-right: 80px;
+
+}
+
+.col{
+display: flex;
+justify-content: left;
+}
+
+#font{
+
+padding-top: 70px;
+font-size: 50px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+#font2{
+display: flex;
+justify-content: none;
+padding: 0;
+margin-left: 0;
+}
+.col-6-col1{
+display: flex;
+justify-content: left;
+padding-right: 50px;
+}
+
+
+/*Styles for information */
+.col{
+padding-left: 150px; 
+padding-right: 150px; 
+padding-bottom: 60px;
+}
+
+
+#img3{
+width: 1000px;
+height: 600px;
+display: flex;
+justify-content: center;
+border-radius: 25%;
+border: solid;
+border: #b74e8d;
+border-width: 2px ;
+border-color: fuchsia;
+}
+
+
+#log{
+display: flex;
+justify-content: center;
+width: 1200px;
+height: 800px;
+padding-left: 100px;
+padding-right: 100px;
+padding-top: 60px;
+padding-bottom: 100px ;
+
+}
+

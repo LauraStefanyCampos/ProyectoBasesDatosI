@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleEdit.css">
+    <link rel="stylesheet" href="css/landing-space.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    
+    <title>Code Editor</title>
+    
+
+<style>
+       body{
+            background-image: url(img/istockphoto-686880388-612x612\ \(1\).jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+           
+          
+        }
+    </style>
+       
+    
+    
+</head>
+<body>
+    <nav style="background-color: rgba(229, 235, 241, 0.03)">
+        <div class="navbar-left" >
+            <img src="img/imagen 1.png" alt="EH" class="logo">
+
+            <ul>
+                <li><a href="landing_page.html">Home</a></li>
+
+            </ul>
+        </div>
+        
+        <div class="navbar-right">
+            <ul>
+                <li id="navbarUser" lass="navbar-email"></li>
+                <li><a href="indexPrincipal.html">  User  </a></li><img src="img/23.png" alt="" class="logos">
+                <div id="cartnumbercontainer"></div>
+            </li>
+            </ul>   
+        </div>
+    </nav>
+
+
+  
+   <div id="conteiner"  style="background-color: rgba(28, 29, 30, 0.128);">  
+    <div class="main_title">
+        <h1> Cod Editor HTML , CSS, JAVASCRIPT </h1>
+    </div>
+    <div class="main_content">
+            <textarea onkeyup="editorUpdate()" id="htmlText" class="texto" placeholder="Escribe el código HTML"></textarea>
+            <textarea onkeyup="editorUpdate()" id="cssText" class="texto" placeholder="Escribe el código CSS"></textarea>
+            <textarea onkeyup="editorUpdate()" id="jsText" class="texto" placeholder="Escribe el código JavaScript"></textarea>
+    </div>
+       <iframe  id="textoVista" srcdoc=""></iframe>
+       <button id="buton" onclick="saveContent()">Descargar</button> 
+      
+   <div>
+    <script src="/EditorTexto/app.js"></script>
+</body>
+</html>
+
